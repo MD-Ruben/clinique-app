@@ -29,11 +29,11 @@ const socialLinks = [
 const quickLinks01 = [
   {
     path: '/home',
-    display: 'Home',
+    display: 'Accueil',
   },
   {
     path: '/',
-    display: 'About Us',
+    display: 'À propos de nous',
   },
   {
     path: '/services',
@@ -48,30 +48,30 @@ const quickLinks01 = [
 const quickLinks02 = [
   {
     path: '/find a doctor',
-    display: 'Find a Doctor',
+    display: 'Trouver un médecin',
   },
   {
     path: '/',
-    display: 'Request an Appointment',
+    display: 'Demander un rendez-vous',
   },
   {
     path: '/',
-    display: 'Find a Location',
+    display: 'Trouver un lieu',
   },
   {
     path: '/',
-    display: 'Get a Opinion',
+    display: 'Obtenir un avis',
   },
 ];
 
 const quickLinks03 = [
   {
     path: '/',
-    display: 'Donate',
+    display: 'Faire un don',
   },
   {
     path: '/contact',
-    display: 'Contact Us',
+    display: 'Nous contacter',
   },
 ];
 
@@ -83,9 +83,10 @@ const Footer = () => {
       <div className="container">
         <div className="flex justify-between flex-col md:flex-row flex-wrap gap-[30px]">
           <div>
-            <img src={Logo} alt="Logo-img" />
+            {/* <img src={Logo} alt="Logo-img" /> */}
+            <h2 className='uppercase text-[25px] leading-[30px] font-[700] mb-6 text-headingColor'>la victoire</h2>
             <p className="text-[16px] leading-7 font-[400] text-textColor mt-4">
-              Copyright © {year} developed by Muhibur Rahman all right reserved.
+              Copyright © {year} developed by LA VICTOIRE all right reserved.
             </p>
             <div className="flex items-center gap-3 mt-4">
               {socialLinks.map((link, index) => (
@@ -102,7 +103,7 @@ const Footer = () => {
 
           <div>
             <h2 className="text-[20px] leading-[30px] font-[700] mb-6 text-headingColor">
-              Quick Links
+            Liens utiles
             </h2>
             <ul>
               {quickLinks01.map((item, index) => (
@@ -118,7 +119,7 @@ const Footer = () => {
 
           <div>
             <h2 className="text-[20px] leading-[30px] font-[700] mb-6 text-headingColor">
-              I want to:
+            Je souhaite :
             </h2>
             <ul>
               {quickLinks02.map((item, index) => (

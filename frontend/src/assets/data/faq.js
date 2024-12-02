@@ -1,27 +1,27 @@
 export const faqs = [
   {
-    question: 'What is your medical care?',
+    question: 'Quels sont vos soins médicaux ?',
     content:
-      'One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.',
+      'One Medical a été fondé sur un meilleur modèle de soins, conçu autour des besoins des patients et offrant un niveau supérieur de qualité et de service à un prix abordable. Nous y parvenons grâce à une conception innovante, un excellent service à la clientèle et une utilisation efficace de la technologie.',
   },
   {
-    question: 'What happens if I need to go a hospital?',
+    question: 'Que se passe-t-il si je dois me rendre à l\'hôpital ?',
     content:
-      'One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.',
+      'One Medical a été fondé sur un meilleur modèle de soins, conçu autour des besoins des patients et offrant un niveau supérieur de qualité et de service à un prix abordable. Nous y parvenons grâce à une conception innovante, un excellent service à la clientèle et une utilisation efficace de la technologie.',
   },
   {
-    question: 'What happens if I need to go a hospital?',
+    question: 'Que se passe-t-il si je dois me rendre à l\'hôpital ?',
     content:
-      'One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.',
+      'One Medical a été fondé sur un meilleur modèle de soins, conçu autour des besoins des patients et offrant un niveau supérieur de qualité et de service à un prix abordable. Nous y parvenons grâce à une conception innovante, un excellent service à la clientèle et une utilisation efficace de la technologie.',
   },
   {
-    question: 'Can I visit your medical office?',
+    question: 'Puis-je visiter votre cabinet médical ?',
     content:
-      'One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.',
+      'One Medical a été fondé sur un meilleur modèle de soins, conçu autour des besoins des patients et offrant un niveau supérieur de qualité et de service à un prix abordable. Nous y parvenons grâce à une conception innovante, un excellent service à la clientèle et une utilisation efficace de la technologie.',
   },
   {
-    question: 'Does you provide urgent care?',
+    question: 'Fournissez-vous des soins d\'urgence ?',
     content:
-      'One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.',
+      'One Medical a été fondé sur un meilleur modèle de soins, conçu autour des besoins des patients et offrant un niveau supérieur de qualité et de service à un prix abordable. Nous y parvenons grâce à une conception innovante, un excellent service à la clientèle et une utilisation efficace de la technologie.',
   },
 ];

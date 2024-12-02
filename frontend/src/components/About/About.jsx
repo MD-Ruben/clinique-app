@@ -1,6 +1,6 @@
-import aboutimg from '../../assets/images/about.png';
-import aboutCardimg from '../../assets/images/about-card.png';
-import { Link } from 'react-router-dom';
+import aboutimg from "../../assets/images/about.png";
+import aboutCardimg from "../../assets/images/about-card.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -17,21 +17,24 @@ const About = () => {
           {/* about content */}
 
           <div className="w-full lg:w-1/2 xl:w-[670px] order-1 lg:order-2">
-            <div className="heading">Proud to be one of the nations best</div>
+            <div className="heading">
+              Fier d'être l'un des meilleurs du pays
+            </div>
             <p className="text__para">
-              For 30 years in a row, U.S. News & World Report has recognized us
-              as one of the best publics hospitals in the Nations and #1 in
-              Texas. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Ipsam, optio.
+              Depuis 30 ans, le Ivory Coast. News & World Report nous a reconnus
+              comme l'un des meilleurs hôpitaux publics des Nations et le
+              premier du Texas. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ipsam, optio.
             </p>
             <p className="textpara mt-[30px]">
-              Our best is something we strive for each day, caring for our
-              patients-not looking back at what we accomplished but towards what
-              we can do tommorrow. Providing the best. Lorem, ipsum dolor sit
-              amet consectetur adipisicing elit.
+              Nous nous efforçons de donner le meilleur de nous-mêmes chaque
+              jour, en prenant soin de nos patients. Nous ne regardons pas ce
+              que nous avons accompli, mais ce que nous pouvons faire demain.
+              Offrir le meilleur. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit.
             </p>
             <Link to="/">
-              <button className="btn">Learn More</button>
+              <button className="btn">En savoir plus</button>
             </Link>
           </div>
         </div>

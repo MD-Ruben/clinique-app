@@ -17,7 +17,7 @@ return (
             </figure>
             <div>
                 <span className=" bg-[#CCF0F3] Otext-irisBlueColor py-1 px-6 1g:py-2 1g:px-6 text- [12px] leading-4 1g:text- [16px] lg: leading-7 font-semibold rounded">
-                    Surgeon 
+                Chirurgien 
                 </span>
                 <h3 className= "Otext-headingColor text-[22px] leading-9 mt-3 font-bold">
                     Kalpesh Vishwakarma 

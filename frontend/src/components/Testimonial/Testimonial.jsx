@@ -1,9 +1,9 @@
-import { Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import patientAvatar from '../../assets/images/patient-avatar.png';
-import { HiStar } from 'react-icons/hi';
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import patientAvatar from "../../assets/images/patient-avatar.png";
+import { HiStar } from "react-icons/hi";
 
 const Testimonial = () => {
   return (
@@ -45,8 +45,8 @@ const Testimonial = () => {
               </div>
             </div>
             <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
-              I have taken medical services from them. They treat so well and
-              they are providing the best medical services.
+              J'ai eu recours à leurs services médicaux. Ils traitent si bien et
+              fournissent les meilleurs services médicaux.
             </p>
           </div>
         </SwiperSlide>
@@ -68,8 +68,8 @@ const Testimonial = () => {
               </div>
             </div>
             <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
-              I have taken medical services from them. They treat so well and
-              they are providing the best medical services.
+              J'ai eu recours à leurs services médicaux. Ils traitent si bien et
+              fournissent les meilleurs services médicaux.
             </p>
           </div>
         </SwiperSlide>
@@ -91,8 +91,8 @@ const Testimonial = () => {
               </div>
             </div>
             <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
-              I have taken medical services from them. They treat so well and
-              they are providing the best medical services.
+              J'ai eu recours à leurs services médicaux. Ils traitent si bien et
+              fournissent les meilleurs services médicaux.
             </p>
           </div>
         </SwiperSlide>
@@ -114,8 +114,8 @@ const Testimonial = () => {
               </div>
             </div>
             <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
-              I have taken medical services from them. They treat so well and
-              they are providing the best medical services.
+              J'ai eu recours à leurs services médicaux. Ils traitent si bien et
+              fournissent les meilleurs services médicaux.
             </p>
           </div>
         </SwiperSlide>
@@ -137,8 +137,8 @@ const Testimonial = () => {
               </div>
             </div>
             <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
-              I have taken medical services from them. They treat so well and
-              they are providing the best medical services.
+              J'ai eu recours à leurs services médicaux. Ils traitent si bien et
+              fournissent les meilleurs services médicaux.
             </p>
           </div>
         </SwiperSlide>

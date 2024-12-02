@@ -1,53 +1,53 @@
- import logo from '../../assets/images/logo.png';
-import { Link, NavLink } from 'react-router-dom';
-import { BiMenu } from 'react-icons/bi';
-import { useEffect, useRef, useContext } from 'react';
-import { authContext } from '../../context/AuthContext';
+import logo from "../../assets/images/logo.png";
+import { Link, NavLink } from "react-router-dom";
+import { BiMenu } from "react-icons/bi";
+import { useEffect, useRef, useContext } from "react";
+import { authContext } from "../../context/AuthContext";
 
 const navLinks = [
   {
-    path: '/home',
-    display: 'Home',
+    path: "/home",
+    display: "Accueil",
   },
   {
-    path: '/doctors',
-    display: 'Find a Doctor',
+    path: "/doctors",
+    display: "Trouver un médecin",
   },
   {
-    path: '/services',
-    display: 'Services',
+    path: "/services",
+    display: "Services",
   },
   {
-    path: '/contact',
-    display: 'Contact',
+    path: "/contact",
+    display: "Contact",
   },
 ];
 
 const Header = () => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
-  const {user,role,token} = useContext(authContext)
+  const { user, role, token } = useContext(authContext);
 
   const handleStickyHeader = () => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (
         document.body.scrollTop > 80 ||
         document.documentElement.scrollTop > 80
       ) {
-        headerRef.current.classList.add('sticky__header');
+        headerRef.current.classList.add("sticky__header");
       } else {
-        headerRef.current.classList.remove('sticky__header');
+        headerRef.current.classList.remove("sticky__header");
       }
     });
   };
 
   useEffect(() => {
     handleStickyHeader();
-    return () => window.removeEventListener('scroll', handleStickyHeader);
+    return () => window.removeEventListener("scroll", handleStickyHeader);
   });
 
   const toggleMenu = () => {
-    menuRef.current.classList.toggle('show__menu');
+    menuRef.current.classList.toggle("show__menu");
   };
 
   return (
@@ -56,7 +56,10 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div>
-            <img src={logo} alt="" />
+            {/* <img src={logo} alt="" /> */}
+            <h2 className="text-[24px] leading-[34px] text-headingColor font-[700]">
+              LA VICTOIRE
+            </h2>
           </div>
 
           {/* Menu */}
@@ -68,8 +71,8 @@ const Header = () => {
                     to={link.path}
                     className={(navClass) =>
                       navClass.isActive
-                        ? 'text-primaryColor text-[16px] leading-7 font-[600]'
-                        : 'text-textColor text-[16px] leading-7 font-[500] hover:text-primaryColor'
+                        ? "text-primaryColor text-[16px] leading-7 font-[600]"
+                        : "text-textColor text-[16px] leading-7 font-[500] hover:text-primaryColor"
                     }
                   >
                     {link.display}
@@ -81,25 +84,37 @@ const Header = () => {
 
           {/* nav Right */}
           <div className="flex items-center gap-4">
-            { user && token ?
+            {user && token ? (
               <div>
-              <Link to={`${role==='doctor' ? '/doctors/profile/me' : '/users/profile/me'}`}>
-                <figure className="w-[35px] h-[35] rounded-full">
-                  <img src={user?.photo} className="w-full rounded-full" alt="" />
-                </figure> 
+                <Link
+                  to={`${
+                    role === "doctor"
+                      ? "/doctors/profile/me"
+                      : "/users/profile/me"
+                  }`}
+                >
+                  <figure className="w-[35px] h-[35] rounded-full">
+                    <img
+                      src={user?.photo}
+                      className="w-full rounded-full"
+                      alt=""
+                    />
+                  </figure>
+                </Link>
+              </div>
+            ) : (
+              <Link to="/login">
+                <button className="bg-primaryColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px]">
+                  Connexion
+                </button>
               </Link>
-            </div> : <Link to="/login">
-              <button className="bg-primaryColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px]">
-                Login
-              </button>
-            </Link>}
+            )}
             <span className="md:hidden" onClick={toggleMenu}>
               <BiMenu className="w-6 h-6 cursor-pointer" />
             </span>
           </div>
         </div>
       </div>
-      
     </header>
   );
 };
